@@ -1,0 +1,78 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>Гроза Томск</title>
+	<meta charset="utf-8">
+
+	<!-- иконки -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- карта -->
+	<link rel="stylesheet" href="js/leaflet/leaflet.css" />
+	<script src="js/leaflet/leaflet.js"></script>
+
+	<!-- jquery -->
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="js/datepicker-ru.js"></script>
+
+	<!-- местное -->
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/realtime.css" />
+	<link rel="stylesheet" href="css/oldtime.css" />
+	<link rel="stylesheet" href="css/ctrl.css" />
+	<script src="js/ck.js"></script>
+	<script src="js/ctrl.js"></script>
+	<script src="js/realtime.js"></script>
+	<script src="js/oldtime.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+
+<body>
+
+	<!-- объект карта -->
+	<div id="map"></div>
+
+	<!-- заголовок 
+	<div id="title"><p>Грозовая активность Томской области</p></div> -->
+
+	<div id="blck_message"><a id="message"></a></div>
+	<div id="blck_location"><a id="location"></a></div>
+	<div id="blck_error"><p id="error"></a></div>
+
+	<!-- кнопки управления -->
+	<div id="ctrl">
+		<a id="ctrl-realtime" class="unpressed" href="#"><i class="fa fa-clock-o"></i></a> 
+		<a id="ctrl-oldtime" class="unpressed" href="#"><i class="fa fa-calendar"></i></a>
+	</div> 
+
+	<!-- Период просмотра онлайн -->
+	<div id="realtime">
+		<p>Просмотр в реальном времени</p>
+		<form>
+			<label><input type="radio" name="realtime" value="1"/><span id="realtime-span-1"> 0.5 часа</span></label>
+			<label><input type="radio" name="realtime" value="2"/><span id="realtime-span-2"> 1 час</span></label>
+			<label><input type="radio" name="realtime" value="3"/><span id="realtime-span-3"> 2 часа</span></label>
+			<label><input type="radio" name="realtime" value="4"/><span id="realtime-span-4"> 8 часов</span></label>
+			<label><input type="radio" name="realtime" value="5"/><span id="realtime-span-5"> 12 часов</span></label>
+			<label><input type="radio" name="realtime" value="6"/><span id="realtime-span-6"> 24 часа</span></label>
+		</form>
+	</div>
+
+	<!-- Просмотр за период -->
+	<div id="oldtime"><p>Просмотр за период времени</p>
+		<form>
+			<label><span>Дата:</span><input type="text" id="day" readonly /></label>
+			<label><span>С часа:</span><select id="from"></select></label>
+			<label><span>До часа:</span><select id="to"></select></label>
+		</form>
+		<p><a id="load-oldtime" href="#">Загрузить () событий</a></p>
+	</div>
+
+</body>
+
+</html>

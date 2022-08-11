@@ -1,0 +1,66 @@
+/*
+ * Стили для блок ввода данных просмотра грозы в реальном времеи
+ */
+
+/* Блок для ввода данных */
+#realtime {
+	position:		absolute;
+	z-index: 		1000;
+    top: 			10px;
+    right: 			46px;
+
+    margin: 		auto;
+	
+	width: 			200px;
+	height: 		200px;
+
+	display: 		none;
+	text-indent: 	1px;
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+/*	color: 			rgba(0,0,0,0.1);
+	background: 	rgba(244,244,244,0.3);*/
+	border-color: 	rgb(180,180,180);
+	box-shadow: 	0 1px 5px rgba(0,0,0,0.4);
+	border-radius: 	5px;
+}
+
+/* Текст заголовка */
+#realtime p {
+	margin:  		5px;
+	text-align: 	center;
+	font: 			13px 'Lucida Console', Monaco, monospace;
+}
+
+/* Форма ввода данных */
+#realtime form {
+	margin: 		10px;	
+}
+
+/* Метки для ввода данных */
+#realtime label {
+    position: 		relative;
+	left:			0px;
+
+	margin: 		5px;
+	padding: 		0px;
+
+	width: 			150px;
+
+	display: 		block;
+    cursor: 		pointer;
+	font: 			bold 13px 'Lucida Console', Monaco, monospace;
+}
+
+/* Выделим цветом отмеченную метку */
+#realtime input[type="radio"]:checked + span {
+	color:			#bbb;
+}
+
+/*
+#realtime:hover,
+#realtime:hover #form-realtime {
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+}*/
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=boltek
+Icon=/home/boltek/Boltek/GrozaTomsk/l-icon.png
+Comment=startboltek
+Exec=sh /home/boltek/Boltek/GrozaTomsk/boltek.sh
+StartupNotify=false
+Terminal=true
+Hidden=false
+Path=/home/boltek/Boltek/GrozaTomsk

@@ -1,0 +1,82 @@
+/*
+ * Блок ввода данных просмотра грозы за период
+ */
+
+ /* Блок с формой */
+#oldtime {
+	position:		absolute;
+	z-index: 		1000;
+    top: 			37px;
+    right: 			46px;
+
+    margin: 		auto;
+	
+	width: 			200px;
+	height: 		170px;
+
+	display: 		none;
+	font: 			bold 13px 'Lucida Console', Monaco, monospace;
+	text-indent: 	1px;
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+	border-color: 	rgb(180,180,180);
+	box-shadow: 	0 1px 5px rgba(0,0,0,0.4);
+	border-radius: 	5px;
+}
+
+/* Текст в блоке */
+#oldtime p {
+	margin:  		5px;
+	text-align: 	center;
+	font: 			13px 'Lucida Console', Monaco, monospace;
+}
+
+/* Форма */
+#oldtime form {
+	margin: 		13px;	
+}
+
+/* Подписи к элементам формы */
+#oldtime label {
+	position: 		relative;
+	left:			0px;
+
+	margin: 		0px;
+	padding: 		0px;
+
+	display: 		block;
+	width: 			170px;
+	height: 		26px;
+	cursor: 		pointer;
+	font: 			13px 'Lucida Console', Monaco, monospace;
+}
+
+/* Элемент для ввода дня  */
+#day {
+	float: 			right;
+	width: 			82px;
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+}
+
+/* Выпадающий список, со списком часов */
+#from {
+	float: 			right;
+	width: 			82px;
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+}
+
+/* Выпадающий список, со списком часов */
+#to {
+	float: 			right;
+	width: 			82px;
+	color: 			rgba(0,0,0,0.9);
+	background: 	rgba(244,244,244,0.9);
+}
+
+#load-oldtime {
+	text-align: 	center;
+	font: 			11px 'Lucida Console', Monaco, monospace;
+}
+

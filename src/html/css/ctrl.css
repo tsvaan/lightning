@@ -1,0 +1,137 @@
+/*
+ * Стили для кнопок включения парамтеров режима просмотра 
+ * Создаются две кнопки, каждая включает\отключает окошко с параметрами режима просмотра
+ */
+
+
+/* в этом блоке будем выводить информацию о текущем режиме просмотра грозовых событий */
+#blck_message {
+	position:		absolute;
+	z-index: 		1000;
+	top:			10px;
+	right:			50px;
+	margin: 		0px;
+	padding: 		0px;
+	width: 			350px;
+	height:			26px;
+	background: 	rgba(0,0,0,0);
+}
+#blck_message a {
+	position:		 absolute;
+	z-index: 		 1000;
+	top: 			 0;
+	left: 			 0;
+	display: 		 block;
+	color: 			 #000;
+	text-align: 	 left;
+	text-decoration: none;
+	font: 			 13px 'Lucida Console', Monaco, monospace;
+}
+
+/*  */
+#blck_location {
+	position:		absolute;
+	z-index: 		1000;
+	top:			36px;
+	right:			50px;
+	margin: 		0px;
+	padding: 		0px;
+	width: 			350px;
+	height:			26px;
+	background: 	rgba(0,0,0,0);
+}
+#blck_location a {
+	position:		 absolute;
+	z-index: 		 1000;
+	top: 			 0;
+	left: 			 0;
+	display: 		 block;
+	color: 			 #000;
+	text-align: 	 left;
+	text-decoration: none;
+	font: 			 13px 'Lucida Console', Monaco, monospace;
+}
+
+/*  */
+#blck_error {
+	position:		absolute;
+	z-index: 		1000;
+	top:			52px;
+	right:			50px;
+	margin: 		0px;
+	padding: 		0px;
+	width: 			350px;
+	height:			26px;
+	background: 	rgba(0,0,0,0);
+}
+#blck_error p {
+	position:		 absolute;
+	z-index: 		 1000;
+	top: 		 	 0;
+	left: 			 0;
+	display: 		 block;
+	color: 			 #000;
+	text-align: 	 left;
+	text-decoration: none;
+	font: 			 13px 'Lucida Console', Monaco, monospace;
+}
+
+/*  Подложка для кнопок управления просмотром */
+#ctrl {
+	position:		absolute;
+	z-index: 		1000;
+	top:			10px;
+	right:			10px;
+
+	margin: 		0px;
+	padding: 		0px;
+
+	width: 			26px;
+	height:			53px;
+
+	background: 	rgb(180,180,180);
+	border: 		0px solid #999;
+	box-shadow: 	0 1px 5px rgba(0,0,0,0.4);
+	border-radius: 	5px;
+}
+
+/* нажатая кнопка */
+.pressed {
+	color: 				#bbb;
+	background-color:	#f4f4f4; 
+}
+
+/* не нажатая кнопка */
+.unpressed {
+	color: 				#000;
+	background-color:	#fff; 
+}
+
+/* Кнопки */
+#ctrl a,
+#ctrl a:hover {
+	width: 26;
+	height: 26px;
+
+	display: block;
+	border-bottom: 1px solid #ccc;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+}
+
+/* Скругленные уголки для верхней кнопки */
+#ctrl a:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+/* Скругленные уголки для нижней кнопки */
+#ctrl a:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: none;
+}
+
+
